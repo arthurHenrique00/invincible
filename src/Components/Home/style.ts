@@ -31,11 +31,11 @@ export const Hero = styled.div`
     a {
       position: absolute;
       background-color: ${colors.blue};
-      padding: 12px;
+      padding: 3px 12px;
       font-family: Bebas Neue;
       text-decoration: none;
       color: white;
-      border-radius: 22px;
+      border-radius: 22px 0;
       font-size: 16px;
       right: 14%;
       margin-top: 32px;
@@ -49,7 +49,7 @@ export const Hero = styled.div`
 `
 
 export const Viltrum = styled.section`
-  background-image: linear-gradient(${colors.blue}, ${colors.yellow});
+  background-image: linear-gradient(${colors.blue}, #ecf0f1);
 
   .border {
     width: 100%;
@@ -58,13 +58,62 @@ export const Viltrum = styled.section`
 
   .viltrum {
     padding: 60px;
+    display: flex;
+    width: 100%;
 
-    img {
-      display: block;
-      width: 450px;
-      height: 250px;
-      margin: 0 auto;
+    div {
       margin-bottom: 32px;
+      margin: 0 auto;
+
+      img {
+        width: 350px;
+        height: 200px;
+        margin-bottom: 22px;
+      }
+
+      h2 {
+        margin-bottom: 12px;
+        padding: 3px;
+        color: black;
+        background-color: white;
+        font-size: 22px;
+        font-family: Bebas Neue;
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      &:before {
+        content: '';
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        width: 350px;
+        height: 200px;
+        background-color: ${colors.gray};
+        background-image: radial-gradient(${colors.blue} 3px, transparent 5px);
+        background-size: 20px 20px;
+        z-index: -1;
+        transition: all 0.3s ease;
+      }
+
+      &:hover:before {
+        top: 10px;
+        left: 10px;
+      }
+
+      &:hover {
+        transform: scale(1.1, 1.1);
+      }
+
+      &:hover {
+        h2 {
+          position: absolute;
+          display: block;
+        }
+      }
     }
   }
 
@@ -80,9 +129,22 @@ export const Viltrum = styled.section`
 `
 
 export const Viltrumites = styled.section`
-  background-image: linear-gradient(${colors.yellow}, ${colors.blue});
+  background-image: linear-gradient(#ecf0f1, ${colors.blue});
+  padding-top: 64px;
 
-  img {
-    width: 300px;
+  h2 {
+    font-family: Bebas Neue;
+    font-size: 64px;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    margin-bottom: 64px;
+  }
+
+  .viltrumites {
+    text-align: center;
+
+    img {
+      width: 300px;
+    }
   }
 `

@@ -11,7 +11,7 @@ export const Cabecalho = styled.header`
   img {
     width: 100px;
     height: 50px;
-    margin-left: 12px;
+    margin-left: 32px;
   }
 
   ul {
@@ -24,7 +24,7 @@ export const Cabecalho = styled.header`
 
       a {
         text-decoration: none;
-        color: ${colors.yellow};
+        color: ${colors.blue};
         font-family: Bebas Neue;
         font-size: 18px;
       }

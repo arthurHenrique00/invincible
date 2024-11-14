@@ -7,7 +7,7 @@ const Header = () => (
     <nav>
       <ul>
         <li>
-          <a href="#">Viltrumitas</a>
+          <a href="#viltr">Viltrumitas</a>
         </li>
         <li>
           <a href="#">Inimigos</a>
