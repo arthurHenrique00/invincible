@@ -6,11 +6,18 @@ const Header = () => (
     <img src={invicible} />
     <nav>
       <ul>
-        <li>Home</li>
-        <li>Viltrumitas</li>
-        <li>Inimigos</li>
-        <li>Mais Vendidos</li>
-        <li>Melhores Momentos</li>
+        <li>
+          <a href="#">Viltrumitas</a>
+        </li>
+        <li>
+          <a href="#">Inimigos</a>
+        </li>
+        <li>
+          <a href="#">Mais Vendidos</a>
+        </li>
+        <li>
+          <a href="#">Melhores Momentos</a>
+        </li>
       </ul>
     </nav>
   </Cabecalho>

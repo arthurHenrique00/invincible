@@ -6,21 +6,28 @@ export const Cabecalho = styled.header`
   background-color: ${colors.black};
   justify-content: space-between;
   align-items: center;
-  font-family: Bebas Neue;
   padding: 22px;
 
   img {
-    width: 370px;
-    height: 180px;
+    width: 100px;
+    height: 50px;
+    margin-left: 12px;
   }
 
   ul {
     display: flex;
+    list-style: none;
 
     li {
-      margin-right: 12px;
+      margin-right: 22px;
       font-size: 16px;
-      color: ${colors.yellow};
+
+      a {
+        text-decoration: none;
+        color: ${colors.yellow};
+        font-family: Bebas Neue;
+        font-size: 18px;
+      }
     }
   }
 `

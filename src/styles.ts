@@ -1,10 +1,10 @@
-import { createGlobalStyle } from 'styled-components'
+import styled, { createGlobalStyle } from 'styled-components'
 
 export const colors = {
   black: '#000',
   red: '#c0392b',
   yellow: '#fffa65',
-  blue: '#25CCF7',
+  blue: '#24B4FF',
   gray: '#bdc3c7'
 }
 
@@ -22,3 +22,8 @@ const GlobalStyle = createGlobalStyle`
     }
 `
 export default GlobalStyle
+
+export const Container = styled.div`
+  width: 100%;
+  margin: 0 auto;
+`
