@@ -1,5 +1,12 @@
 import { useEffect } from 'react'
-import { Enemies, EnemyGroup, Hero, Viltrum, Viltrumites } from './style'
+import {
+  BestSellers,
+  Enemies,
+  EnemyGroup,
+  Hero,
+  Viltrum,
+  Viltrumites
+} from './style'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
@@ -36,6 +43,12 @@ import doc_seismic from '../../invincible_img/doc_seismic.jpg'
 import rus_livingston from '../../invincible_img/rus_livingston.webp'
 import armstrong_levy from '../../invincible_img/amrstrong_levy.jpg'
 import enemy from '../../invincible_img/enemies-banner.png'
+
+import bs_1 from '../../invincible_img/best_seller_1.jpg'
+import bs_2 from '../../invincible_img/best_seller_2.jpg'
+import bs_3 from '../../invincible_img/best_seller_3.jpg'
+import bs_4 from '../../invincible_img/best_seller_4.jpg'
+import bs_5 from '../../invincible_img/best_seller_5.png'
 
 const Home = () => {
   useEffect(() => {
@@ -190,6 +203,79 @@ const Home = () => {
         </div>
         <img className="border" src={border_bottom} />
       </Enemies>
+
+      <BestSellers>
+        <img className="border" src={papper_bottom} />
+        <h2 style={{ marginLeft: '220px' }}>Mais Vendidos</h2>
+        <div>
+          <div className="best-seller">
+            <div data-aos="fade-right" className="comics">
+              <p>Continue em Pé</p>
+              <img src={bs_1} />
+            </div>
+            <div data-aos="fade-down" className="quantity">
+              <div
+                className="bar"
+                style={{ width: '50px', height: '500px' }}
+              ></div>
+              <p>114,754 Cópias</p>
+            </div>
+          </div>
+          <div className="best-seller">
+            <div data-aos="fade-right" className="comics">
+              <p>Amigos</p>
+              <img src={bs_2} />
+            </div>
+            <div data-aos="fade-down" className="quantity">
+              <div
+                className="bar"
+                style={{ width: '50px', height: '450px' }}
+              ></div>
+              <p>108,254 Cópias</p>
+            </div>
+          </div>
+          <div className="best-seller">
+            <div data-aos="fade-right" className="comics">
+              <p>Dias Felizes</p>
+              <img src={bs_3} />
+            </div>
+            <div data-aos="fade-down" className="quantity">
+              <div
+                className="bar"
+                style={{ width: '50px', height: '350px' }}
+              ></div>
+              <p>97,714 Cópias</p>
+            </div>
+          </div>
+          <div className="best-seller">
+            <div data-aos="fade-right" className="comics">
+              <p>A morte de todo o mundo</p>
+              <img src={bs_4} />
+            </div>
+            <div data-aos="fade-down" className="quantity">
+              <div
+                className="bar"
+                style={{ width: '50px', height: '290px' }}
+              ></div>
+              <p>89,546 Cópias</p>
+            </div>
+          </div>
+          <div className="best-seller">
+            <div data-aos="fade-right" className="comics">
+              <p>Sequids</p>
+              <img src={bs_5} />
+            </div>
+            <div data-aos="fade-down" className="quantity">
+              <div
+                className="bar"
+                style={{ width: '50px', height: '250px' }}
+              ></div>
+              <p>76,231 Cópias</p>
+            </div>
+          </div>
+        </div>
+        <img className="border" src={border_bottom} />
+      </BestSellers>
     </>
   )
 }

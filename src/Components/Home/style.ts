@@ -2,6 +2,7 @@ import styled from 'styled-components'
 import { colors } from '../../styles'
 import bgSpace from '../../invincible_img/spaceBG.gif'
 import bannerHero from '../../invincible_img/black_hole.gif'
+import comics from '../../invincible_img/bg_comics.jpg'
 
 export const Hero = styled.div`
   background-image: url(${bannerHero});
@@ -319,6 +320,68 @@ export const Enemies = styled.section`
           margin-top: 16px;
           color: white;
           text-align: center;
+        }
+      }
+    }
+  }
+`
+
+export const BestSellers = styled.section`
+  background-image: url(${comics});
+
+  h2 {
+    font-family: Bebas Neue;
+    font-size: 64px;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    margin-top: 22px;
+  }
+
+  > div {
+    display: flex;
+    padding: 180px 0;
+    margin-left: 25px;
+
+    .best-seller {
+      display: flex;
+      margin-top: auto;
+
+      .comics {
+        margin-top: auto;
+        display: block;
+
+        img {
+          width: 150px;
+          height: 200px;
+          margin: 26px;
+          border-radius: 3px;
+
+          &:hover {
+            transform: scale(1.2, 1.2);
+            transition: all 0.3s ease;
+          }
+        }
+
+        p {
+          color: white;
+          font-family: Bebas Neue;
+          text-align: center;
+        }
+      }
+
+      .quantity {
+        display: block;
+
+        .bar {
+          background-color: ${colors.gray};
+          margin-right: 60px;
+          padding: 7px;
+        }
+
+        p {
+          margin-top: 12px;
+          color: white;
+          font-family: Bebas Neue;
         }
       }
     }
