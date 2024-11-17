@@ -22,6 +22,11 @@ const GlobalStyle = createGlobalStyle`
 
       overflow-x: hidden;
     }
+
+      .border {
+    width: 100%;
+    height: 50px;
+  }
 `
 export default GlobalStyle
 

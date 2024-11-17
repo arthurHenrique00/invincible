@@ -1,10 +1,10 @@
 import { useEffect } from 'react'
-import { EnemyGroup, Hero, Viltrum, Viltrumites } from './style'
+import { Enemies, EnemyGroup, Hero, Viltrum, Viltrumites } from './style'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 import mark_omni from '../../invincible_img/amazon_invincible-removebg.png'
-import mark from '../../invincible_img/mark.jpeg'
+import mark from '../../invincible_img/mark.jpg'
 import nolan from '../../invincible_img/omni-man_vil.jpeg'
 import conquest from '../../invincible_img/conquest_vil.jpg'
 import thragg from '../../invincible_img/thragg_vil.jpeg'
@@ -22,11 +22,20 @@ import title_card_pattern from '../../invincible_img/title_card_pattern1.png'
 import title_card_black from '../../invincible_img/invincible_black_card.png'
 import border_bottom from '../../invincible_img/border-papper-bottom.png'
 import papper_bottom from '../../invincible_img/border-papper.png'
-import viltrumites from '../../invincible_img/invincibbl12.png'
+import viltrumites from '../../invincible_img/viltrumites_banner.png'
 import GlobalStyle from '../../styles'
 import lizard_league from '../../invincible_img/lizard-league.webp'
 import empire_viltrum from '../../invincible_img/empire-viltrumite.webp'
 import sequids from '../../invincible_img/sequids.jpg'
+import queen_lizard from '../../invincible_img/Queen Lizard.jpeg'
+import king_lizard from '../../invincible_img/King Lizard.jpeg'
+import mauler from '../../invincible_img/mauler.jpg'
+import machine_head from '../../invincible_img/machine_head.jpg'
+import supreme_lizard from '../../invincible_img/supreme_lizard_ll.webp'
+import doc_seismic from '../../invincible_img/doc_seismic.jpg'
+import rus_livingston from '../../invincible_img/rus_livingston.webp'
+import armstrong_levy from '../../invincible_img/amrstrong_levy.jpg'
+import enemy from '../../invincible_img/enemies-banner.png'
 
 const Home = () => {
   useEffect(() => {
@@ -78,7 +87,7 @@ const Home = () => {
       <Viltrumites id="viltr">
         <h2 style={{ marginLeft: '220px' }}>Viltrumitas</h2>
         <div>
-          <img style={{ width: '650px', height: '450px' }} src={viltrumites} />
+          <img style={{ width: '630px', height: '320px' }} src={viltrumites} />
           <div className="viltrumites">
             <div className="char">
               <img src={mark} />
@@ -128,7 +137,7 @@ const Home = () => {
           </div>
           <div data-aos="fade-down">
             <img src={empire_viltrum} />
-            <h2>Empério de Viltrum</h2>
+            <h2>Império de Viltrum</h2>
           </div>
           <div data-aos="fade-right">
             <img src={sequids} />
@@ -136,6 +145,51 @@ const Home = () => {
           </div>
         </div>
       </EnemyGroup>
+
+      <Enemies>
+        <h2 style={{ marginLeft: '220px' }}>Inimigos</h2>
+        <div>
+          <img
+            style={{ width: '400px', height: '620px', margin: '0 120px' }}
+            src={enemy}
+          />
+          <div className="enemies">
+            <div className="char">
+              <img src={armstrong_levy} />
+              <div className="title">Armstrong Levy</div>
+            </div>
+            <div className="char">
+              <img src={queen_lizard} />
+              <div className="title">Rainha Lagarto</div>
+            </div>
+            <div className="char">
+              <img src={king_lizard} />
+              <div className="title">Rei Lagarto</div>
+            </div>
+            <div className="char">
+              <img src={doc_seismic} />
+              <div className="title">Dr. Seismic</div>
+            </div>
+            <div className="char">
+              <img src={mauler} />
+              <div className="title">Gêmeos Mauler</div>
+            </div>
+            <div className="char">
+              <img src={supreme_lizard} />
+              <div className="title">Lagarto Supremo</div>
+            </div>
+            <div className="char">
+              <img src={machine_head} />
+              <div className="title">Cabeça de Máquina</div>
+            </div>
+            <div className="char">
+              <img src={rus_livingston} />
+              <div className="title">Rus Livingston</div>
+            </div>
+          </div>
+        </div>
+        <img className="border" src={border_bottom} />
+      </Enemies>
     </>
   )
 }

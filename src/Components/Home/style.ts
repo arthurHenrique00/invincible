@@ -52,11 +52,6 @@ export const Hero = styled.div`
 export const Viltrum = styled.section`
   background-image: linear-gradient(${colors.blue}, #ecf0f1);
 
-  .border {
-    width: 100%;
-    height: 50px;
-  }
-
   .viltrum {
     padding: 60px;
     display: flex;
@@ -270,11 +265,62 @@ export const EnemyGroup = styled.section`
       height: 150px;
     }
   }
-
-  .border {
-    width: 100%;
-    height: 50px;
-  }
 `
 
-export const Enemies = styled.section``
+export const Enemies = styled.section`
+  background-image: linear-gradient(${colors.red}, ${colors.black});
+
+  h2 {
+    font-family: Bebas Neue;
+    font-size: 64px;
+    color: transparent;
+    -webkit-text-stroke: 1px ${colors.black};
+    margin-bottom: 64px;
+  }
+
+  div {
+    display: flex;
+    align-items: center;
+
+    .enemies {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+    }
+
+    .enemies {
+      text-align: center;
+      display: grid;
+      grid-template-columns: 150px 150px 150px 150px;
+      gap: 60px;
+
+      .char {
+        width: 300px;
+        padding-bottom: 100px;
+        display: flex;
+        flex-direction: column;
+
+        img {
+          filter: grayscale();
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          transition: filter 0.4s ease-in-out;
+
+          &:hover {
+            filter: none;
+          }
+        }
+
+        .title {
+          font-family: Bebas Neue;
+          font-size: 22px;
+          margin-top: 16px;
+          color: white;
+          text-align: center;
+        }
+      }
+    }
+  }
+`
