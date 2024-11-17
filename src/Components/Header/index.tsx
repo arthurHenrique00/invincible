@@ -10,13 +10,10 @@ const Header = () => (
           <a href="#viltr">Viltrumitas</a>
         </li>
         <li>
-          <a href="#">Inimigos</a>
+          <a href="#enemies">Inimigos</a>
         </li>
         <li>
-          <a href="#">Mais Vendidos</a>
-        </li>
-        <li>
-          <a href="#">Melhores Momentos</a>
+          <a href="#bestsell">Mais Vendidos</a>
         </li>
       </ul>
     </nav>

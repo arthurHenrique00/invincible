@@ -138,7 +138,7 @@ const Home = () => {
         </div>
       </Viltrumites>
 
-      <EnemyGroup>
+      <EnemyGroup id="enemies">
         <img className="border" src={papper_bottom} />
         <div className="title-card">
           <img src={title_card_black} />
@@ -204,7 +204,7 @@ const Home = () => {
         <img className="border" src={border_bottom} />
       </Enemies>
 
-      <BestSellers>
+      <BestSellers id="bestsell">
         <img className="border" src={papper_bottom} />
         <h2 style={{ marginLeft: '220px' }}>Mais Vendidos</h2>
         <div>
