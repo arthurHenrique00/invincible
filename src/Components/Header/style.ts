@@ -27,6 +27,10 @@ export const Cabecalho = styled.header`
         color: ${colors.blue};
         font-family: Bebas Neue;
         font-size: 18px;
+
+        &:hover {
+          color: ${colors.yellow};
+        }
       }
     }
   }
